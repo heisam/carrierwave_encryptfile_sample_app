@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File:</strong>
+  <%= link_to @encrypted_file.myfile_url, download_encrypted_file_url(@encrypted_file) %>
+</p>
+<p>
+<strong>Password:</strong>
+  <%= @encrypted_file.myfile_password %>
+</p>
+<p>
+<strong>Content Type:</strong>
+  <%= @encrypted_file.myfile_content_type %>
+</p>
+<strong>Name:</strong>
+  <%= @encrypted_file.myfile_name %>
+</p>
+
+<%= link_to 'Edit', edit_encrypted_file_path(@encrypted_file) %> |
+<%= link_to 'Back', encrypted_files_path %>

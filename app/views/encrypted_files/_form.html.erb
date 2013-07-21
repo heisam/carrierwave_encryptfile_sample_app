@@ -1,0 +1,25 @@
+<%= form_for(@encrypted_file) do |f| %>
+  <% if @encrypted_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@encrypted_file.errors.count, "error") %> prohibited this encrypted_file from being saved:</h2>
+
+      <ul>
+      <% @encrypted_file.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :myfile %><br>
+    <%= f.file_field :myfile %>
+  </div>
+  <div class="field">
+    <%= f.label :myfile_password %><br>
+    <%= f.text_field :myfile_password %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
