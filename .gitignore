@@ -19,3 +19,5 @@
 
 database.yml
 secret_token.rb
+
+/public/uploads

@@ -1,4 +1,7 @@
 CarrierwaveEncryptfileSampleApp::Application.routes.draw do
+  
+  root 'encrypted_files#index'
+
   resources :encrypted_files do
     get 'download', :on => :member
   end

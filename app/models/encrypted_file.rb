@@ -16,7 +16,7 @@ class EncryptedFile < ActiveRecord::Base
   def update_file_attributes
     if myfile.present? && myfile_changed?
       self.myfile_content_type = myfile.file.content_type
-      #self.myfile_size = myfile.file.size
+      self.myfile_size = myfile.file.size
     end
   end
 

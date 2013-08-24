@@ -3,6 +3,7 @@ PATH
   specs:
     carrierwave_encryptfile (0.0.1)
       carrierwave
+      gibberish
 
 PATH
   remote: ../gibberish/
